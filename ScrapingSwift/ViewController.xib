@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="ScrapingSwift">
+            <connections>
+                <outlet property="textfield" destination="QF9-ue-f9K" id="RF3-Uj-ykf"/>
+                <outlet property="view" destination="iN0-l3-epB" id="q3F-5A-RHq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="欅坂背景画像" translatesAutoresizingMaskIntoConstraints="NO" id="fTX-Fr-aab">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGt-Jz-MFx">
+                    <rect key="frame" x="277" y="287" width="60" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="scraping">
+                        <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="scrapingTapped:" destination="-1" eventType="touchUpInside" id="HXa-rU-5ZJ"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QF9-ue-f9K">
+                    <rect key="frame" x="67" y="287" width="178" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.64841366609999995" blue="0.99785554320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5l1-hv-dS6"/>
+                        <constraint firstAttribute="width" constant="178" id="wb2-NG-Fjk"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QF9-ue-f9K" firstAttribute="leading" secondItem="uSb-GN-Xrj" secondAttribute="leading" constant="67" id="Rac-ix-FaE"/>
+                <constraint firstItem="QF9-ue-f9K" firstAttribute="top" secondItem="uSb-GN-Xrj" secondAttribute="top" constant="267" id="YQI-oB-pmk"/>
+                <constraint firstItem="ZGt-Jz-MFx" firstAttribute="top" secondItem="QF9-ue-f9K" secondAttribute="top" id="f4d-ij-EjE"/>
+                <constraint firstItem="ZGt-Jz-MFx" firstAttribute="leading" secondItem="QF9-ue-f9K" secondAttribute="trailing" constant="32" id="zyX-l1-9Fp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="uSb-GN-Xrj"/>
+            <point key="canvasLocation" x="141.59999999999999" y="47.226386806596707"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="欅坂背景画像" width="500" height="889"/>
+    </resources>
+</document>

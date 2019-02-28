@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2DBF19222707FF00CFC2FD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B2DBF162226F3E300CFC2FD /* ViewController.xib */; };
 		1B956C8F2224F7EC00F57C84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B956C8E2224F7EC00F57C84 /* AppDelegate.swift */; };
 		1B956C912224F7EC00F57C84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B956C902224F7EC00F57C84 /* ViewController.swift */; };
-		1B956C942224F7ED00F57C84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B956C922224F7ED00F57C84 /* Main.storyboard */; };
 		1B956C962224F7F400F57C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B956C952224F7F400F57C84 /* Assets.xcassets */; };
 		1B956C992224F7F400F57C84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B956C972224F7F400F57C84 /* LaunchScreen.storyboard */; };
+		1B956CA42225671C00F57C84 /* PhotoPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B956CA22225671C00F57C84 /* PhotoPresentViewController.swift */; };
+		1B956CA52225671C00F57C84 /* PhotoPresentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B956CA32225671C00F57C84 /* PhotoPresentViewController.xib */; };
+		82DD76183C71968638F9824F /* Pods_ScrapingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175A0ABF9CC3FECEB1D3AFFF /* Pods_ScrapingSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		175A0ABF9CC3FECEB1D3AFFF /* Pods_ScrapingSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrapingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B2DBF162226F3E300CFC2FD /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		1B956C8B2224F7EC00F57C84 /* ScrapingSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrapingSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B956C8E2224F7EC00F57C84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B956C902224F7EC00F57C84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1B956C932224F7ED00F57C84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B956C952224F7F400F57C84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B956C982224F7F400F57C84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B956C9A2224F7F400F57C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B956CA22225671C00F57C84 /* PhotoPresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPresentViewController.swift; sourceTree = "<group>"; };
+		1B956CA32225671C00F57C84 /* PhotoPresentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoPresentViewController.xib; sourceTree = "<group>"; };
+		8E6ACBEFBA77BB2FFE8B3FE0 /* Pods-ScrapingSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrapingSwift.release.xcconfig"; path = "Target Support Files/Pods-ScrapingSwift/Pods-ScrapingSwift.release.xcconfig"; sourceTree = "<group>"; };
+		C81D6CDF36890145BFFE9A5B /* Pods-ScrapingSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrapingSwift.debug.xcconfig"; path = "Target Support Files/Pods-ScrapingSwift/Pods-ScrapingSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82DD76183C71968638F9824F /* Pods_ScrapingSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				1B956C8D2224F7EC00F57C84 /* ScrapingSwift */,
 				1B956C8C2224F7EC00F57C84 /* Products */,
+				80BCEB38B2581FA4EE5183C2 /* Pods */,
+				5F6C6E9E125AAC0063D3A60D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +67,31 @@
 			children = (
 				1B956C8E2224F7EC00F57C84 /* AppDelegate.swift */,
 				1B956C902224F7EC00F57C84 /* ViewController.swift */,
-				1B956C922224F7ED00F57C84 /* Main.storyboard */,
+				1B2DBF162226F3E300CFC2FD /* ViewController.xib */,
+				1B956CA22225671C00F57C84 /* PhotoPresentViewController.swift */,
+				1B956CA32225671C00F57C84 /* PhotoPresentViewController.xib */,
 				1B956C952224F7F400F57C84 /* Assets.xcassets */,
 				1B956C972224F7F400F57C84 /* LaunchScreen.storyboard */,
 				1B956C9A2224F7F400F57C84 /* Info.plist */,
 			);
 			path = ScrapingSwift;
+			sourceTree = "<group>";
+		};
+		5F6C6E9E125AAC0063D3A60D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				175A0ABF9CC3FECEB1D3AFFF /* Pods_ScrapingSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80BCEB38B2581FA4EE5183C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C81D6CDF36890145BFFE9A5B /* Pods-ScrapingSwift.debug.xcconfig */,
+				8E6ACBEFBA77BB2FFE8B3FE0 /* Pods-ScrapingSwift.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B956C9D2224F7F400F57C84 /* Build configuration list for PBXNativeTarget "ScrapingSwift" */;
 			buildPhases = (
+				C3CD0165292D28B9AA55E792 /* [CP] Check Pods Manifest.lock */,
 				1B956C872224F7EC00F57C84 /* Sources */,
 				1B956C882224F7EC00F57C84 /* Frameworks */,
 				1B956C892224F7EC00F57C84 /* Resources */,
+				056674FC5F92FE5A7537D767 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +155,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B956C992224F7F400F57C84 /* LaunchScreen.storyboard in Resources */,
+				1B956CA52225671C00F57C84 /* PhotoPresentViewController.xib in Resources */,
+				1B2DBF19222707FF00CFC2FD /* ViewController.xib in Resources */,
 				1B956C962224F7F400F57C84 /* Assets.xcassets in Resources */,
-				1B956C942224F7ED00F57C84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		056674FC5F92FE5A7537D767 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScrapingSwift/Pods-ScrapingSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScrapingSwift/Pods-ScrapingSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3CD0165292D28B9AA55E792 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrapingSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B956C872224F7EC00F57C84 /* Sources */ = {
@@ -136,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B956C912224F7EC00F57C84 /* ViewController.swift in Sources */,
+				1B956CA42225671C00F57C84 /* PhotoPresentViewController.swift in Sources */,
 				1B956C8F2224F7EC00F57C84 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +226,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1B956C922224F7ED00F57C84 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B956C932224F7ED00F57C84 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1B956C972224F7F400F57C84 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,11 +355,19 @@
 		};
 		1B956C9E2224F7F400F57C84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C81D6CDF36890145BFFE9A5B /* Pods-ScrapingSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7B7GXBVG2Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/**",
+					"$(inherit)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kanna\"",
+				);
 				INFOPLIST_FILE = ScrapingSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +381,19 @@
 		};
 		1B956C9F2224F7F400F57C84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E6ACBEFBA77BB2FFE8B3FE0 /* Pods-ScrapingSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7B7GXBVG2Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/**",
+					"$(inherit)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kanna\"",
+				);
 				INFOPLIST_FILE = ScrapingSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
