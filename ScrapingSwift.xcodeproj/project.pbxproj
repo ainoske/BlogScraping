@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B2DBF19222707FF00CFC2FD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B2DBF162226F3E300CFC2FD /* ViewController.xib */; };
+		1B2ADEE1227DEF8A007B31DC /* DataOfHinata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2ADEE0227DEF8A007B31DC /* DataOfHinata.swift */; };
+		1B2ADEE4227DF146007B31DC /* HinataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2ADEE2227DF146007B31DC /* HinataViewController.swift */; };
+		1B2ADEE5227DF146007B31DC /* HinataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B2ADEE3227DF146007B31DC /* HinataViewController.xib */; };
+		1B2ADEEE227F4318007B31DC /* ScrapingKeyakiBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2ADEED227F4318007B31DC /* ScrapingKeyakiBlog.swift */; };
+		1B2DBF19222707FF00CFC2FD /* KeyakiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B2DBF162226F3E300CFC2FD /* KeyakiViewController.xib */; };
+		1B45D5DF227CA91700DA29E1 /* DataOfKeyaki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45D5DE227CA91700DA29E1 /* DataOfKeyaki.swift */; };
 		1B956C8F2224F7EC00F57C84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B956C8E2224F7EC00F57C84 /* AppDelegate.swift */; };
-		1B956C912224F7EC00F57C84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B956C902224F7EC00F57C84 /* ViewController.swift */; };
+		1B956C912224F7EC00F57C84 /* KeyakiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B956C902224F7EC00F57C84 /* KeyakiViewController.swift */; };
 		1B956C962224F7F400F57C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B956C952224F7F400F57C84 /* Assets.xcassets */; };
 		1B956C992224F7F400F57C84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B956C972224F7F400F57C84 /* LaunchScreen.storyboard */; };
 		1B956CA42225671C00F57C84 /* PhotoPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B956CA22225671C00F57C84 /* PhotoPresentViewController.swift */; };
@@ -19,10 +24,15 @@
 
 /* Begin PBXFileReference section */
 		175A0ABF9CC3FECEB1D3AFFF /* Pods_ScrapingSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrapingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B2DBF162226F3E300CFC2FD /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		1B2ADEE0227DEF8A007B31DC /* DataOfHinata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfHinata.swift; sourceTree = "<group>"; };
+		1B2ADEE2227DF146007B31DC /* HinataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HinataViewController.swift; sourceTree = "<group>"; };
+		1B2ADEE3227DF146007B31DC /* HinataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HinataViewController.xib; sourceTree = "<group>"; };
+		1B2ADEED227F4318007B31DC /* ScrapingKeyakiBlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapingKeyakiBlog.swift; sourceTree = "<group>"; };
+		1B2DBF162226F3E300CFC2FD /* KeyakiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyakiViewController.xib; sourceTree = "<group>"; };
+		1B45D5DE227CA91700DA29E1 /* DataOfKeyaki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfKeyaki.swift; sourceTree = "<group>"; };
 		1B956C8B2224F7EC00F57C84 /* ScrapingSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrapingSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B956C8E2224F7EC00F57C84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B956C902224F7EC00F57C84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B956C902224F7EC00F57C84 /* KeyakiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyakiViewController.swift; sourceTree = "<group>"; };
 		1B956C952224F7F400F57C84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B956C982224F7F400F57C84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B956C9A2224F7F400F57C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +54,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B2ADEE6227DF156007B31DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B2ADEE2227DF146007B31DC /* HinataViewController.swift */,
+				1B2ADEE3227DF146007B31DC /* HinataViewController.xib */,
+				1B956C902224F7EC00F57C84 /* KeyakiViewController.swift */,
+				1B2DBF162226F3E300CFC2FD /* KeyakiViewController.xib */,
+				1B956CA22225671C00F57C84 /* PhotoPresentViewController.swift */,
+				1B956CA32225671C00F57C84 /* PhotoPresentViewController.xib */,
+				1B2ADEED227F4318007B31DC /* ScrapingKeyakiBlog.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B45D5E2227DEAA900DA29E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B45D5DE227CA91700DA29E1 /* DataOfKeyaki.swift */,
+				1B2ADEE0227DEF8A007B31DC /* DataOfHinata.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1B956C822224F7EC00F57C84 = {
 			isa = PBXGroup;
 			children = (
@@ -66,10 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				1B956C8E2224F7EC00F57C84 /* AppDelegate.swift */,
-				1B956C902224F7EC00F57C84 /* ViewController.swift */,
-				1B2DBF162226F3E300CFC2FD /* ViewController.xib */,
-				1B956CA22225671C00F57C84 /* PhotoPresentViewController.swift */,
-				1B956CA32225671C00F57C84 /* PhotoPresentViewController.xib */,
+				1B2ADEE6227DF156007B31DC /* View */,
+				1B45D5E2227DEAA900DA29E1 /* Model */,
 				1B956C952224F7F400F57C84 /* Assets.xcassets */,
 				1B956C972224F7F400F57C84 /* LaunchScreen.storyboard */,
 				1B956C9A2224F7F400F57C84 /* Info.plist */,
@@ -156,8 +187,9 @@
 			files = (
 				1B956C992224F7F400F57C84 /* LaunchScreen.storyboard in Resources */,
 				1B956CA52225671C00F57C84 /* PhotoPresentViewController.xib in Resources */,
-				1B2DBF19222707FF00CFC2FD /* ViewController.xib in Resources */,
+				1B2DBF19222707FF00CFC2FD /* KeyakiViewController.xib in Resources */,
 				1B956C962224F7F400F57C84 /* Assets.xcassets in Resources */,
+				1B2ADEE5227DF146007B31DC /* HinataViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +249,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B956C912224F7EC00F57C84 /* ViewController.swift in Sources */,
+				1B45D5DF227CA91700DA29E1 /* DataOfKeyaki.swift in Sources */,
+				1B2ADEE1227DEF8A007B31DC /* DataOfHinata.swift in Sources */,
+				1B956C912224F7EC00F57C84 /* KeyakiViewController.swift in Sources */,
+				1B2ADEEE227F4318007B31DC /* ScrapingKeyakiBlog.swift in Sources */,
+				1B2ADEE4227DF146007B31DC /* HinataViewController.swift in Sources */,
 				1B956CA42225671C00F57C84 /* PhotoPresentViewController.swift in Sources */,
 				1B956C8F2224F7EC00F57C84 /* AppDelegate.swift in Sources */,
 			);
