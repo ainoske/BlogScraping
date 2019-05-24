@@ -1,8 +1,8 @@
 //
-//  KeyakiHandler.swift
+//  ScrapingHinataBlog.swift
 //  ScrapingSwift
 //
-//  Created by 高野隆正 on 2019/05/06.
+//  Created by 高野隆正 on 2019/05/10.
 //  Copyright © 2019 高野隆正. All rights reserved.
 //
 
@@ -10,11 +10,11 @@ import UIKit
 import Alamofire
 import Kanna
 
-class ScrapingKeyakiBlog: NSObject {
+class ScrapingHinataBlog: NSObject {
     
     private var completion: (_ error: Error?) -> Void = { _ in }
     
-    func screpeWebsite(member: MemberOfKeyaki, completion: @escaping() -> Void) -> Void{
+    func screpeWebsite(member: MemberOfHinata, completion: @escaping() -> Void) -> Void{
         
         let blogNumber = member.generateBlogURL()
         
@@ -22,8 +22,6 @@ class ScrapingKeyakiBlog: NSObject {
         
         Alamofire.request(blogNumber).responseString{ response in
             print("\(response.result.isSuccess)")
-            
-
             
             if let html = response.result.value{
                 self.parseHTML(html: html)
@@ -35,7 +33,7 @@ class ScrapingKeyakiBlog: NSObject {
     func parseHTML(html: String){
         if let doc = try? HTML(html: html, encoding: .utf8){
             for link in doc.css("div"){
-                if "\(link["class"] ?? "")" == "box-article"{
+                if "\(link["class"] ?? "")" == "c-blog-article__text"{
                     for me in link.css("img"){
                         guard let imageString = me["src"]
                             else{
@@ -69,5 +67,5 @@ class ScrapingKeyakiBlog: NSObject {
     @objc private func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
         completion(error)
     }
-
+    
 }

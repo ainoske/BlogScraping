@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HINATAZAKA46" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NiC-xD-adg">
-                    <rect key="frame" x="32" y="152" width="310" height="71"/>
+                    <rect key="frame" x="32.666666666666657" y="152" width="310" height="71"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="310" id="KI0-Qo-Jwx"/>
                     </constraints>
@@ -32,11 +32,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hinatazaka46_logo" translatesAutoresizingMaskIntoConstraints="NO" id="AzK-mi-R9s">
-                    <rect key="frame" x="39" y="335" width="336" height="375"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="375" id="J0s-IF-GxS"/>
-                        <constraint firstAttribute="width" constant="336" id="UtS-K6-UkU"/>
-                    </constraints>
+                    <rect key="frame" x="39" y="278" width="336" height="500"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="hgf-In-Yuk">
                     <rect key="frame" x="4" y="258" width="368" height="45"/>
@@ -75,12 +71,14 @@
             </subviews>
             <color key="backgroundColor" red="0.82031170827813871" green="0.99206136339464523" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="AzK-mi-R9s" firstAttribute="top" secondItem="hgf-In-Yuk" secondAttribute="bottom" constant="32" id="0Mt-AD-2ht"/>
+                <constraint firstItem="AzK-mi-R9s" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5bK-Zx-YyA"/>
                 <constraint firstItem="AzK-mi-R9s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="39" id="7bi-uw-hp3"/>
                 <constraint firstItem="hgf-In-Yuk" firstAttribute="top" secondItem="NiC-xD-adg" secondAttribute="bottom" constant="35" id="Cf0-M9-gYf"/>
-                <constraint firstItem="NiC-xD-adg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="KdG-CL-HIi"/>
                 <constraint firstItem="NiC-xD-adg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="108" id="RtA-iz-7nc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hgf-In-Yuk" secondAttribute="trailing" constant="3" id="XjZ-aN-6lJ"/>
+                <constraint firstItem="NiC-xD-adg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="guE-Hx-kOh"/>
                 <constraint firstItem="hgf-In-Yuk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="keF-4D-h4H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AzK-mi-R9s" secondAttribute="bottom" id="sUN-6N-ATi"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="140.57971014492756" y="105.80357142857143"/>

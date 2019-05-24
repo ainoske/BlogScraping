@@ -31,76 +31,25 @@ class HinataViewController: UIViewController {
         
     }
     
-    func screpeWebsite(){
+    @IBAction func scrapingTapped(_ sender: Any) {
         
         guard let text = self.textfield.text, let member = MemberOfHinata(memberNumber: text) else {
             return
         }
         
-        
-        let blogNumber = member.generateBlogURL()
-        
-        print(blogNumber)
-        
-        Alamofire.request(blogNumber).responseString{ response in
-            print("\(response.result.isSuccess)")
-            
-            let photoPresentViewController = PhotoPresentViewController()
-            photoPresentViewController.delegate = self
-            self.present(photoPresentViewController, animated: true, completion: nil)
-            
-            if let html = response.result.value{
-                self.parseHTML(html: html)
+        let scrape = ScrapingHinataBlog()
+        scrape.screpeWebsite(member: member, completion: { [weak self] in
+            DispatchQueue.main.async { [weak self] in
+                let hinataSuccessPresenter = PhotoPresentHinataViewController()
+                hinataSuccessPresenter.delegate = self
+                self?.present(hinataSuccessPresenter, animated: true)
             }
-        }
-        
-    }
-    func parseHTML(html: String){
-        if let doc = try? HTML(html: html, encoding: .utf8){
-            for link in doc.css("div"){
-                if "\(link["class"] ?? "")" == "c-blog-article__text"{
-                    for me in link.css("img"){
-                        guard let imageString = me["src"]
-                            else{
-                                fatalError("imageString error")
-                        }
-                        guard let imageURL = URL(string: imageString)
-                            else{
-                                fatalError("imageURL error")
-                        }
-                        downloadImage(imageURL: imageURL)
-                    }
-                }
-            }
-        }
-    }
-    func downloadImage(imageURL: URL){
-        
-        do{
-            let data = try Data(contentsOf: imageURL)
-            guard let image = UIImage(data: data)
-                else{
-                    fatalError("image error")
-            }
-            UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
-        }
-        catch let err {
-            fatalError("Error : \(err.localizedDescription)")
-        }
-        
-    }
-    @objc private func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
-        completion(error)
-    }
-    @IBAction func scrapingTapped(_ sender: Any) {
-        screpeWebsite()
-        print("tapped")
-        
+        })        
     }
 }
 
-extension HinataViewController: PhotoPresentViewControllerDelegate {
-    func photoPresentViewControllerDidTapClose(_ viewController: PhotoPresentViewController) {
+extension HinataViewController: PhotoPresentHinataViewControllerDelegate {
+    func photoPresentHinataViewControllerDidTapClose(_ viewController: PhotoPresentHinataViewController) {
         dismiss(animated: true, completion: nil)
     }
 }

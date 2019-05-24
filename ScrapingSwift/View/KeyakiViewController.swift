@@ -34,9 +34,15 @@ class KeyakiViewController: UIViewController {
         guard let text = self.textfield.text, let member = MemberOfKeyaki(memberNumber: text) else {
             return
         }
-        ScrapingKeyakiBlog.screpeWebsite(member: member)
-        print("tapped")
+        let scrape = ScrapingKeyakiBlog()
         
+        scrape.screpeWebsite(member: member, completion: { [weak self] in
+            DispatchQueue.main.async { [weak self] in
+                    let photoPresentViewController = PhotoPresentViewController()
+                    photoPresentViewController.delegate = self
+                    self?.present(photoPresentViewController, animated: true, completion: nil)
+            }
+            })        
     }
 }
 

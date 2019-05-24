@@ -19,6 +19,9 @@
 		1B956C992224F7F400F57C84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B956C972224F7F400F57C84 /* LaunchScreen.storyboard */; };
 		1B956CA42225671C00F57C84 /* PhotoPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B956CA22225671C00F57C84 /* PhotoPresentViewController.swift */; };
 		1B956CA52225671C00F57C84 /* PhotoPresentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B956CA32225671C00F57C84 /* PhotoPresentViewController.xib */; };
+		1BE869EB2285380B00255061 /* PhotoPresentHinataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE869E92285380B00255061 /* PhotoPresentHinataViewController.swift */; };
+		1BE869EC2285380B00255061 /* PhotoPresentHinataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BE869EA2285380B00255061 /* PhotoPresentHinataViewController.xib */; };
+		1BE869EE228538D100255061 /* ScrapingHinataBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE869ED228538D100255061 /* ScrapingHinataBlog.swift */; };
 		82DD76183C71968638F9824F /* Pods_ScrapingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175A0ABF9CC3FECEB1D3AFFF /* Pods_ScrapingSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,9 @@
 		1B956C9A2224F7F400F57C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B956CA22225671C00F57C84 /* PhotoPresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPresentViewController.swift; sourceTree = "<group>"; };
 		1B956CA32225671C00F57C84 /* PhotoPresentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoPresentViewController.xib; sourceTree = "<group>"; };
+		1BE869E92285380B00255061 /* PhotoPresentHinataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPresentHinataViewController.swift; sourceTree = "<group>"; };
+		1BE869EA2285380B00255061 /* PhotoPresentHinataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoPresentHinataViewController.xib; sourceTree = "<group>"; };
+		1BE869ED228538D100255061 /* ScrapingHinataBlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapingHinataBlog.swift; sourceTree = "<group>"; };
 		8E6ACBEFBA77BB2FFE8B3FE0 /* Pods-ScrapingSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrapingSwift.release.xcconfig"; path = "Target Support Files/Pods-ScrapingSwift/Pods-ScrapingSwift.release.xcconfig"; sourceTree = "<group>"; };
 		C81D6CDF36890145BFFE9A5B /* Pods-ScrapingSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrapingSwift.debug.xcconfig"; path = "Target Support Files/Pods-ScrapingSwift/Pods-ScrapingSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +69,10 @@
 				1B2DBF162226F3E300CFC2FD /* KeyakiViewController.xib */,
 				1B956CA22225671C00F57C84 /* PhotoPresentViewController.swift */,
 				1B956CA32225671C00F57C84 /* PhotoPresentViewController.xib */,
+				1BE869E92285380B00255061 /* PhotoPresentHinataViewController.swift */,
+				1BE869EA2285380B00255061 /* PhotoPresentHinataViewController.xib */,
 				1B2ADEED227F4318007B31DC /* ScrapingKeyakiBlog.swift */,
+				1BE869ED228538D100255061 /* ScrapingHinataBlog.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +198,7 @@
 				1B956CA52225671C00F57C84 /* PhotoPresentViewController.xib in Resources */,
 				1B2DBF19222707FF00CFC2FD /* KeyakiViewController.xib in Resources */,
 				1B956C962224F7F400F57C84 /* Assets.xcassets in Resources */,
+				1BE869EC2285380B00255061 /* PhotoPresentHinataViewController.xib in Resources */,
 				1B2ADEE5227DF146007B31DC /* HinataViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE869EE228538D100255061 /* ScrapingHinataBlog.swift in Sources */,
+				1BE869EB2285380B00255061 /* PhotoPresentHinataViewController.swift in Sources */,
 				1B45D5DF227CA91700DA29E1 /* DataOfKeyaki.swift in Sources */,
 				1B2ADEE1227DEF8A007B31DC /* DataOfHinata.swift in Sources */,
 				1B956C912224F7EC00F57C84 /* KeyakiViewController.swift in Sources */,

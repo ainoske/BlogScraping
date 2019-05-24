@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [
-            KeyakiTab.createWithTabBarItem(),
-            HinataTab.createWithTabBarItem(),
+            KeyakiViewController.createWithTabBarItem(),
+            HinataViewController.createWithTabBarItem(),
         ]
         
         // タグ番号が被らないように配列のindexを再設定している
