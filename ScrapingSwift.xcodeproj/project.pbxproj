@@ -13,6 +13,8 @@
 		1B2ADEEE227F4318007B31DC /* ScrapingKeyakiBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2ADEED227F4318007B31DC /* ScrapingKeyakiBlog.swift */; };
 		1B2DBF19222707FF00CFC2FD /* KeyakiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B2DBF162226F3E300CFC2FD /* KeyakiViewController.xib */; };
 		1B45D5DF227CA91700DA29E1 /* DataOfKeyaki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45D5DE227CA91700DA29E1 /* DataOfKeyaki.swift */; };
+		1B908A21236BEF2E005DF626 /* CoreMLInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B908A20236BEF2E005DF626 /* CoreMLInstance.swift */; };
+		1B908A28236C6E8D005DF626 /* HumanModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1B908A27236C6E8D005DF626 /* HumanModel.mlmodel */; };
 		1B956C8F2224F7EC00F57C84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B956C8E2224F7EC00F57C84 /* AppDelegate.swift */; };
 		1B956C912224F7EC00F57C84 /* KeyakiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B956C902224F7EC00F57C84 /* KeyakiViewController.swift */; };
 		1B956C962224F7F400F57C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B956C952224F7F400F57C84 /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 		1B2ADEED227F4318007B31DC /* ScrapingKeyakiBlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapingKeyakiBlog.swift; sourceTree = "<group>"; };
 		1B2DBF162226F3E300CFC2FD /* KeyakiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyakiViewController.xib; sourceTree = "<group>"; };
 		1B45D5DE227CA91700DA29E1 /* DataOfKeyaki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfKeyaki.swift; sourceTree = "<group>"; };
+		1B908A20236BEF2E005DF626 /* CoreMLInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLInstance.swift; sourceTree = "<group>"; };
+		1B908A27236C6E8D005DF626 /* HumanModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HumanModel.mlmodel; sourceTree = "<group>"; };
 		1B956C8B2224F7EC00F57C84 /* ScrapingSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrapingSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B956C8E2224F7EC00F57C84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B956C902224F7EC00F57C84 /* KeyakiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyakiViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 				1BE869EA2285380B00255061 /* PhotoPresentHinataViewController.xib */,
 				1B2ADEED227F4318007B31DC /* ScrapingKeyakiBlog.swift */,
 				1BE869ED228538D100255061 /* ScrapingHinataBlog.swift */,
+				1B908A20236BEF2E005DF626 /* CoreMLInstance.swift */,
+				1B908A27236C6E8D005DF626 /* HumanModel.mlmodel */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +174,7 @@
 				TargetAttributes = {
 					1B956C8A2224F7EC00F57C84 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -259,10 +266,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B908A28236C6E8D005DF626 /* HumanModel.mlmodel in Sources */,
 				1BE869EE228538D100255061 /* ScrapingHinataBlog.swift in Sources */,
 				1BE869EB2285380B00255061 /* PhotoPresentHinataViewController.swift in Sources */,
 				1B45D5DF227CA91700DA29E1 /* DataOfKeyaki.swift in Sources */,
 				1B2ADEE1227DEF8A007B31DC /* DataOfHinata.swift in Sources */,
+				1B908A21236BEF2E005DF626 /* CoreMLInstance.swift in Sources */,
 				1B956C912224F7EC00F57C84 /* KeyakiViewController.swift in Sources */,
 				1B2ADEEE227F4318007B31DC /* ScrapingKeyakiBlog.swift in Sources */,
 				1B2ADEE4227DF146007B31DC /* HinataViewController.swift in Sources */,
@@ -415,14 +424,14 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kanna\"",
 				);
 				INFOPLIST_FILE = ScrapingSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sai.ScrapingSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -441,14 +450,14 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kanna\"",
 				);
 				INFOPLIST_FILE = ScrapingSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sai.ScrapingSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

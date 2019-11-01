@@ -37,13 +37,15 @@ class ScrapingHinataBlog: NSObject {
                     for me in link.css("img"){
                         guard let imageString = me["src"]
                             else{
-                                fatalError("imageString error")
+                                continue
                         }
                         guard let imageURL = URL(string: imageString)
                             else{
                                 fatalError("imageURL error")
                         }
-                        downloadImage(imageURL: imageURL)
+                        if imageURL.pathExtension == "jpg"{
+                            downloadImage(imageURL: imageURL)
+                        }
                     }
                 }
             }
@@ -57,8 +59,12 @@ class ScrapingHinataBlog: NSObject {
                 else{
                     fatalError("image error")
             }
-            UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
-        }
+            guard let ciImage = CIImage(image: image) else{ return }
+            let recognitionResult = CoreMLInstance().createCoreMLModel(image: ciImage)
+            
+            if recognitionResult.identifier == "famale" {
+                UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+            }        }
         catch let err {
             fatalError("Error : \(err.localizedDescription)")
         }
