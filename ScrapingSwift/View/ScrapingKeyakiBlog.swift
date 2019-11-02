@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import Kanna
+import RealmSwift
 
 class ScrapingKeyakiBlog: NSObject {
     

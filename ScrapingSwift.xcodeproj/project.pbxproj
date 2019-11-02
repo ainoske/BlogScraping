@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B209B07236D7272003F8E06 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B209B06236D7272003F8E06 /* RealmModel.swift */; };
 		1B2ADEE1227DEF8A007B31DC /* DataOfHinata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2ADEE0227DEF8A007B31DC /* DataOfHinata.swift */; };
 		1B2ADEE4227DF146007B31DC /* HinataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2ADEE2227DF146007B31DC /* HinataViewController.swift */; };
 		1B2ADEE5227DF146007B31DC /* HinataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B2ADEE3227DF146007B31DC /* HinataViewController.xib */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		175A0ABF9CC3FECEB1D3AFFF /* Pods_ScrapingSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrapingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B209B06236D7272003F8E06 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		1B2ADEE0227DEF8A007B31DC /* DataOfHinata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfHinata.swift; sourceTree = "<group>"; };
 		1B2ADEE2227DF146007B31DC /* HinataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HinataViewController.swift; sourceTree = "<group>"; };
 		1B2ADEE3227DF146007B31DC /* HinataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HinataViewController.xib; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				1B45D5DE227CA91700DA29E1 /* DataOfKeyaki.swift */,
 				1B2ADEE0227DEF8A007B31DC /* DataOfHinata.swift */,
+				1B209B06236D7272003F8E06 /* RealmModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -219,18 +222,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ScrapingSwift/Pods-ScrapingSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-ScrapingSwift/Pods-ScrapingSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-ScrapingSwift/Pods-ScrapingSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -267,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B908A28236C6E8D005DF626 /* HumanModel.mlmodel in Sources */,
+				1B209B07236D7272003F8E06 /* RealmModel.swift in Sources */,
 				1BE869EE228538D100255061 /* ScrapingHinataBlog.swift in Sources */,
 				1BE869EB2285380B00255061 /* PhotoPresentHinataViewController.swift in Sources */,
 				1B45D5DF227CA91700DA29E1 /* DataOfKeyaki.swift in Sources */,

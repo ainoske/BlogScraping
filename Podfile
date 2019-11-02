@@ -9,5 +9,6 @@ target 'ScrapingSwift' do
 
   pod "Alamofire"
   pod "Kanna"
+  pod 'RealmSwift'
 
 end
