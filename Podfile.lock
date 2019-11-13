@@ -1,6 +1,6 @@
 PODS:
-  - Alamofire (4.8.1)
-  - Kanna (4.0.3)
+  - Alamofire (4.9.1)
+  - Kanna (5.0.0)
   - Realm (3.20.0):
     - Realm/Headers (= 3.20.0)
   - Realm/Headers (3.20.0)
@@ -10,22 +10,21 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Kanna
-  - RealmSwift
+  - RealmSwift (~> 3.20.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Kanna
-  trunk:
     - Realm
     - RealmSwift
 
 SPEC CHECKSUMS:
-  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
-  Kanna: 0ebbdd0e7e3308f0aafbd569e79c8cadc5eb877c
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Kanna: a32875df62975f8f4b871e933b4ea1a5c3b8be0f
   Realm: 8b2ca5bc6479a91f379b6b42b5922e396cd5ba5a
   RealmSwift: 1949ef26a279e1845bd51d591b9103adfcd121df
 
-PODFILE CHECKSUM: 0d081c579ca3b15774b1d3f8fefe7a4072d56639
+PODFILE CHECKSUM: f7dfc413d82bbbf6b9540513354c4d07f8be2726
 
 COCOAPODS: 1.8.4

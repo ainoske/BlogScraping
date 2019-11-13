@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1B209B07236D7272003F8E06 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B209B06236D7272003F8E06 /* RealmModel.swift */; };
+		1B20FE9D237C74130074310D /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B20FE9B237C74130074310D /* Realm.framework */; };
+		1B20FE9E237C74130074310D /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1B20FE9B237C74130074310D /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B20FE9F237C74130074310D /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B20FE9C237C74130074310D /* RealmSwift.framework */; };
+		1B20FEA0237C74130074310D /* RealmSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1B20FE9C237C74130074310D /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1B2ADEE1227DEF8A007B31DC /* DataOfHinata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2ADEE0227DEF8A007B31DC /* DataOfHinata.swift */; };
 		1B2ADEE4227DF146007B31DC /* HinataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2ADEE2227DF146007B31DC /* HinataViewController.swift */; };
 		1B2ADEE5227DF146007B31DC /* HinataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B2ADEE3227DF146007B31DC /* HinataViewController.xib */; };
@@ -22,15 +26,37 @@
 		1B956C992224F7F400F57C84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B956C972224F7F400F57C84 /* LaunchScreen.storyboard */; };
 		1B956CA42225671C00F57C84 /* PhotoPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B956CA22225671C00F57C84 /* PhotoPresentViewController.swift */; };
 		1B956CA52225671C00F57C84 /* PhotoPresentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B956CA32225671C00F57C84 /* PhotoPresentViewController.xib */; };
+		1BD5624F237C706A00E5ACDC /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD5624D237C706A00E5ACDC /* Realm.framework */; };
+		1BD56251237C706A00E5ACDC /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD5624E237C706A00E5ACDC /* RealmSwift.framework */; };
+		1BD56255237C70E100E5ACDC /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BD5624D237C706A00E5ACDC /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1BD56256237C70E100E5ACDC /* RealmSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BD5624E237C706A00E5ACDC /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1BE869EB2285380B00255061 /* PhotoPresentHinataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE869E92285380B00255061 /* PhotoPresentHinataViewController.swift */; };
 		1BE869EC2285380B00255061 /* PhotoPresentHinataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BE869EA2285380B00255061 /* PhotoPresentHinataViewController.xib */; };
 		1BE869EE228538D100255061 /* ScrapingHinataBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE869ED228538D100255061 /* ScrapingHinataBlog.swift */; };
-		82DD76183C71968638F9824F /* Pods_ScrapingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175A0ABF9CC3FECEB1D3AFFF /* Pods_ScrapingSwift.framework */; };
+		1BFE2B77237C6AF900DA84DD /* Pods_ScrapingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175A0ABF9CC3FECEB1D3AFFF /* Pods_ScrapingSwift.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1BD56254237C70CD00E5ACDC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1B20FE9E237C74130074310D /* Realm.framework in CopyFiles */,
+				1BD56255237C70E100E5ACDC /* Realm.framework in CopyFiles */,
+				1B20FEA0237C74130074310D /* RealmSwift.framework in CopyFiles */,
+				1BD56256237C70E100E5ACDC /* RealmSwift.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		175A0ABF9CC3FECEB1D3AFFF /* Pods_ScrapingSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrapingSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B209B06236D7272003F8E06 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		1B20FE9B237C74130074310D /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		1B20FE9C237C74130074310D /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		1B2ADEE0227DEF8A007B31DC /* DataOfHinata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfHinata.swift; sourceTree = "<group>"; };
 		1B2ADEE2227DF146007B31DC /* HinataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HinataViewController.swift; sourceTree = "<group>"; };
 		1B2ADEE3227DF146007B31DC /* HinataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HinataViewController.xib; sourceTree = "<group>"; };
@@ -47,6 +73,8 @@
 		1B956C9A2224F7F400F57C84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B956CA22225671C00F57C84 /* PhotoPresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPresentViewController.swift; sourceTree = "<group>"; };
 		1B956CA32225671C00F57C84 /* PhotoPresentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoPresentViewController.xib; sourceTree = "<group>"; };
+		1BD5624D237C706A00E5ACDC /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD5624E237C706A00E5ACDC /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE869E92285380B00255061 /* PhotoPresentHinataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPresentHinataViewController.swift; sourceTree = "<group>"; };
 		1BE869EA2285380B00255061 /* PhotoPresentHinataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoPresentHinataViewController.xib; sourceTree = "<group>"; };
 		1BE869ED228538D100255061 /* ScrapingHinataBlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapingHinataBlog.swift; sourceTree = "<group>"; };
@@ -59,7 +87,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82DD76183C71968638F9824F /* Pods_ScrapingSwift.framework in Frameworks */,
+				1B20FE9D237C74130074310D /* Realm.framework in Frameworks */,
+				1B20FE9F237C74130074310D /* RealmSwift.framework in Frameworks */,
+				1BD5624F237C706A00E5ACDC /* Realm.framework in Frameworks */,
+				1BFE2B77237C6AF900DA84DD /* Pods_ScrapingSwift.framework in Frameworks */,
+				1BD56251237C706A00E5ACDC /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +161,10 @@
 		5F6C6E9E125AAC0063D3A60D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1BD5624D237C706A00E5ACDC /* Realm.framework */,
+				1BD5624E237C706A00E5ACDC /* RealmSwift.framework */,
+				1B20FE9B237C74130074310D /* Realm.framework */,
+				1B20FE9C237C74130074310D /* RealmSwift.framework */,
 				175A0ABF9CC3FECEB1D3AFFF /* Pods_ScrapingSwift.framework */,
 			);
 			name = Frameworks;
@@ -155,6 +191,8 @@
 				1B956C882224F7EC00F57C84 /* Frameworks */,
 				1B956C892224F7EC00F57C84 /* Resources */,
 				056674FC5F92FE5A7537D767 /* [CP] Embed Pods Frameworks */,
+				1BD56253237C70BE00E5ACDC /* ShellScript */,
+				1BD56254237C70CD00E5ACDC /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -231,7 +269,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScrapingSwift/Pods-ScrapingSwift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+		};
+		1BD56253237C70BE00E5ACDC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash “${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh”\n/usr/local/bin/carthage copy-frameworks\n";
 		};
 		C3CD0165292D28B9AA55E792 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -419,6 +475,7 @@
 					"$(inherit)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kanna\"",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ScrapingSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -445,6 +502,7 @@
 					"$(inherit)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kanna\"",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ScrapingSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;

@@ -62,11 +62,14 @@ class ScrapingKeyakiBlog: NSObject {
                 else{
                     fatalError("image error")
             }
+            let pngData = image.pngData()
+            
+            let pngImage = UIImage(data: pngData!)!
             guard let ciImage = CIImage(image: image) else{ return }
             let recognitionResult = CoreMLInstance().createCoreMLModel(image: ciImage)
             
             if recognitionResult.identifier == "famale" {
-                UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+                UIImageWriteToSavedPhotosAlbum(pngImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
             }
         }
         catch let err {
